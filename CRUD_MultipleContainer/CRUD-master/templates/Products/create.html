@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create</title>
+    <link rel="stylesheet" href="/./static/styles.css">
+</head>
+<style>
+body  {
+  background-image: url("/./static/images/bg.jpg");
+  height: 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  text-align: center;
+}
+</style>
+<body>
+    
+    <form action = "" method = "POST"> 
+        {% csrf_token %}  
+        <div class="bg-text">
+  	<br>
+        <br>
+	<h1 style="font-size:50px">Please enter details below:</h1>
+  	<br>
+	<br>
+	<label for="pid" style="font-size:25px">Product id: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+        <input id="pid" type="number" name="pid"> 
+	<br>
+	<br>
+        <label for="pname" style="font-size:25px">Product Name: </label> 
+        <input id="pname" type="text" name="pname"> 
+        <br>
+	<br>
+	<label for="pprice" style="font-size:25px">Product Price:&nbsp; </label> 
+        <input id="pprice" type="number" name="pprice"> 
+	<br>
+	<br>     
+	<br>
+	<input type="submit" value="Create"> 
+	<a href="{% url 'index' %}"><input type="button" value="Go Back"> </a>
+	</div>
+    </form> 
+
+</body>
+</html>

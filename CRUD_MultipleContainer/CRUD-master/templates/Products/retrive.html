@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#product {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#product td, #product th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#product tr:nth-child(even){background-color: #f2f2f2;}
+
+#product tr:hover {background-color: #ddd;}
+
+#product th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #000080;
+  color: white;
+}
+</style>
+</head>
+<body style="background-color:powderblue;">
+<h2 style="color:#000080;font-size:50px">Product Database:</h2>
+<table id ="product" style="width:100%">
+<tr>
+	<th>ID</th>
+	<th>Name</th>
+	<th>Price</th>
+</tr>
+{% for i in data %}
+   <tr>
+	<td>{{ i.0 }}</td>
+	<td>{{ i.1 }}</td>
+	<td>{{ i.2 }}</td>
+   </tr>
+{% endfor %}
+</table>
+</body>
+</html>

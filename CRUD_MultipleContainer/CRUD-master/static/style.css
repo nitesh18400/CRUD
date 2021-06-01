@@ -1,0 +1,35 @@
+input[type=number] {
+    width: 130px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+input[type=number]:focus {
+    width: 30%;
+    background-color: #696969;
+}
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 30%;
+    background-color: #696969;
+}
+
+input[type=submit] {
+  background-color: #FFFFFF;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:focus {
+    background-color: #000000;
+    color: white;
+}

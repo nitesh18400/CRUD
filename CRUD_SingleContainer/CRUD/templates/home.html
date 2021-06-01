@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Main</title>
+
+   
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="/./static/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="/./static/cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+ <script>
+function mouseOver() {
+  document.getElementById("demo").style.color = "yellow";
+}
+
+function mouseOut() {
+  document.getElementById("demo").style.color = "white";
+}
+</script>
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">IIITD</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Products</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()" >Welcome to Our BDMH Assignment-1.</h1>
+    <p class="lead">Based upon:<br>-Docker<br>-HTML, CSS and Javascript<br>-MySQL<br>-MongoDB</p>
+    <p class="lead">
+      <a id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()" href="https://github.com/nitesh18400/CRUD" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+    </p>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Created by <a href="https://github.com/karan18394" class="text-white">Karan Chawla</a> (2018394), <a href="https://github.com/nitesh18400" class="text-white">Nitesh Jaiswal</a> (2018400), <a href="https://github.com/yashraj-singhal" class="text-white">Yashraj Singhal</a> (2018422).</p>
+  </footer>
+</div>
+
+
+    
+  </body>
+</html>
